@@ -51,6 +51,9 @@ select customername, city from customers where city= "South James";
 -- 17. Products ordered alphabetically.
 select * from products order by  productname asc; 
 
+-- 18. Retrieve a list of all active suppliers, showing their names, contact persons, and cities. 
+select SupplierName, ContactPerson, City from suppliers where status = 'Active' order by SupplierName asc;
+
 -- 19. Total sales orders.
 select sum(salesorderid) from salesorders;
 
